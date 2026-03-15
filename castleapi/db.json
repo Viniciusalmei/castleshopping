@@ -1,12 +1,70 @@
 {
-    "products": [
+  "registered_stores": [
+    {"id":1,"name":"Tech Store","logo":"https://cdn-icons-png.flaticon.com/512/1524/1524816.png","description":"Eletrônicos","website":"https://techstore.com","category":"Eletronicos"},
+    {"id":2,"name":"Moda Center","logo":"https://cdn-icons-png.flaticon.com/512/2913/2913091.png","description":"Roupas","website":"https://modacenter.com","category":"Moda"},
+    {"id":3,"name":"Casa Fácil","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995467.png","description":"Casa e decoração","website":"https://casafacil.com","category":"Casa"},
+    {"id":4,"name":"Book Planet","logo":"https://cdn-icons-png.flaticon.com/512/3143/3143615.png","description":"Livros","website":"https://bookplanet.com","category":"Livros"},
+    {"id":5,"name":"Game Hub","logo":"https://cdn-icons-png.flaticon.com/512/747/747376.png","description":"Games","website":"https://gamehub.com","category":"Games"},
+    {"id":6,"name":"Sport Life","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995496.png","description":"Esportes","website":"https://sportlife.com","category":"Esporte"},
+    {"id":7,"name":"Pet Love","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995505.png","description":"Pet shop","website":"https://petlove.com","category":"Pet"},
+    {"id":8,"name":"Beauty Store","logo":"https://cdn-icons-png.flaticon.com/512/2913/2913100.png","description":"Beleza","website":"https://beautystore.com","category":"Beleza"},
+    {"id":9,"name":"Auto Parts","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995483.png","description":"Auto peças","website":"https://autoparts.com","category":"Automotivo"},
+    {"id":10,"name":"Phone World","logo":"https://cdn-icons-png.flaticon.com/512/1524/1524816.png","description":"Celulares","website":"https://phoneworld.com","category":"Celulares"},
+    {"id":11,"name":"Mega Market","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995467.png","description":"Supermercado","website":"https://megamarket.com","category":"Mercado"},
+    {"id":12,"name":"Toy Kingdom","logo":"https://cdn-icons-png.flaticon.com/512/2913/2913049.png","description":"Brinquedos","website":"https://toykingdom.com","category":"Brinquedos"},
+    {"id":13,"name":"Music Shop","logo":"https://cdn-icons-png.flaticon.com/512/3050/3050159.png","description":"Instrumentos","website":"https://musicshop.com","category":"Musica"},
+    {"id":14,"name":"Garden Pro","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995467.png","description":"Jardinagem","website":"https://gardenpro.com","category":"Jardim"},
+    {"id":15,"name":"Baby Store","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995505.png","description":"Produtos para bebê","website":"https://babystore.com","category":"Bebe"},
+    {"id":16,"name":"Fitness Center","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995496.png","description":"Fitness","website":"https://fitnesscenter.com","category":"Fitness"},
+    {"id":17,"name":"Office Plus","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995467.png","description":"Escritório","website":"https://officeplus.com","category":"Escritorio"},
+    {"id":18,"name":"Hardware Pro","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995483.png","description":"Ferramentas","website":"https://hardwarepro.com","category":"Ferramentas"},
+    {"id":19,"name":"Cinema Store","logo":"https://cdn-icons-png.flaticon.com/512/747/747376.png","description":"Filmes","website":"https://cinemastore.com","category":"Filmes"},
+    {"id":20,"name":"Coffee Market","logo":"https://cdn-icons-png.flaticon.com/512/1995/1995467.png","description":"Café e bebidas","website":"https://coffeemarket.com","category":"Alimentos"}
+  ],
 
-    ],
-    "users":[
+  "products":[
+    {"id":1,"name":"Notebook Gamer","price":4500,"image":"https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=500&h=500&fit=crop","store_id":1,"product_url":"https://techstore.com/p1"},
+    {"id":2,"name":"Mouse Gamer","price":150,"image":"https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop","store_id":1,"product_url":"https://techstore.com/p2"},
+    {"id":3,"name":"Camiseta Básica","price":60,"image":"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop","store_id":2,"product_url":"https://modacenter.com/p3"},
+    {"id":4,"name":"Jaqueta Jeans","price":220,"image":"https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&h=500&fit=crop","store_id":2,"product_url":"https://modacenter.com/p4"},
+    {"id":5,"name":"Luminária LED","price":80,"image":"https://images.unsplash.com/photo-1565636192335-14f82e7d00da?w=500&h=500&fit=crop","store_id":3,"product_url":"https://casafacil.com/p5"},
+    {"id":6,"name":"Cadeira Escritório","price":900,"image":"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=500&fit=crop","store_id":17,"product_url":"https://officeplus.com/p6"},
+    {"id":7,"name":"Livro Flutter","price":120,"image":"https://images.unsplash.com/photo-1507842217343-583f20270319?w=500&h=500&fit=crop","store_id":4,"product_url":"https://bookplanet.com/p7"},
+    {"id":8,"name":"Controle Xbox","price":350,"image":"https://images.unsplash.com/photo-1605559424843-9e4c3dec3806?w=500&h=500&fit=crop","store_id":5,"product_url":"https://gamehub.com/p8"},
+    {"id":9,"name":"Bola Futebol","price":90,"image":"https://images.unsplash.com/photo-1579952363873-27f3bade9e55?w=500&h=500&fit=crop","store_id":6,"product_url":"https://sportlife.com/p9"},
+    {"id":10,"name":"Ração Premium","price":140,"image":"https://images.unsplash.com/photo-1568152950566-c1bf43f0a86d?w=500&h=500&fit=crop","store_id":7,"product_url":"https://petlove.com/p10"},
+    {"id":11,"name":"Perfume Feminino","price":300,"image":"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&h=500&fit=crop","store_id":8,"product_url":"https://beautystore.com/p11"},
+    {"id":12,"name":"Filtro de Ar","price":70,"image":"https://images.unsplash.com/photo-1486262715619-67b519e0edd0?w=500&h=500&fit=crop","store_id":9,"product_url":"https://autoparts.com/p12"},
+    {"id":13,"name":"Smartphone X","price":3200,"image":"https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&h=500&fit=crop","store_id":10,"product_url":"https://phoneworld.com/p13"},
+    {"id":14,"name":"Chocolate Gourmet","price":25,"image":"https://images.unsplash.com/photo-1599599810694-b5ac4dd64b73?w=500&h=500&fit=crop","store_id":11,"product_url":"https://megamarket.com/p14"},
+    {"id":15,"name":"Boneco Super Hero","price":110,"image":"https://images.unsplash.com/photo-1595777712802-5d1d3952f4ad?w=500&h=500&fit=crop","store_id":12,"product_url":"https://toykingdom.com/p15"},
+    {"id":16,"name":"Violão Acústico","price":800,"image":"https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=500&h=500&fit=crop","store_id":13,"product_url":"https://musicshop.com/p16"},
+    {"id":17,"name":"Kit Jardinagem","price":95,"image":"https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=500&fit=crop","store_id":14,"product_url":"https://gardenpro.com/p17"},
+    {"id":18,"name":"Carrinho Bebê","price":700,"image":"https://images.unsplash.com/photo-1584622181563-430f63602d4b?w=500&h=500&fit=crop","store_id":15,"product_url":"https://babystore.com/p18"},
+    {"id":19,"name":"Halter 10kg","price":200,"image":"https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=500&fit=crop","store_id":16,"product_url":"https://fitnesscenter.com/p19"},
+    {"id":20,"name":"Furadeira","price":350,"image":"https://images.unsplash.com/photo-1504148455328-c9760d1c115f?w=500&h=500&fit=crop","store_id":18,"product_url":"https://hardwarepro.com/p20"}
+  ],
 
-    ],
-    "registered_stores": [
-        
-    ]
-
+  "users":[
+    {"id":1,"name":"Ana Silva","email":"ana@email.com"},
+    {"id":2,"name":"Bruno Costa","email":"bruno@email.com"},
+    {"id":3,"name":"Carlos Souza","email":"carlos@email.com"},
+    {"id":4,"name":"Daniela Lima","email":"daniela@email.com"},
+    {"id":5,"name":"Eduardo Santos","email":"edu@email.com"},
+    {"id":6,"name":"Fernanda Rocha","email":"fernanda@email.com"},
+    {"id":7,"name":"Gabriel Alves","email":"gabriel@email.com"},
+    {"id":8,"name":"Helena Martins","email":"helena@email.com"},
+    {"id":9,"name":"Igor Ribeiro","email":"igor@email.com"},
+    {"id":10,"name":"Juliana Barros","email":"juliana@email.com"},
+    {"id":11,"name":"Kaique Melo","email":"kaique@email.com"},
+    {"id":12,"name":"Larissa Nunes","email":"larissa@email.com"},
+    {"id":13,"name":"Marcelo Pinto","email":"marcelo@email.com"},
+    {"id":14,"name":"Natalia Gomes","email":"natalia@email.com"},
+    {"id":15,"name":"Otavio Freitas","email":"otavio@email.com"},
+    {"id":16,"name":"Patricia Teixeira","email":"patricia@email.com"},
+    {"id":17,"name":"Rafael Duarte","email":"rafael@email.com"},
+    {"id":18,"name":"Sabrina Lopes","email":"sabrina@email.com"},
+    {"id":19,"name":"Thiago Moraes","email":"thiago@email.com"},
+    {"id":20,"name":"Vanessa Carvalho","email":"vanessa@email.com"}
+  ]
 }
