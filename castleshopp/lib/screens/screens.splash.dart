@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: 
         Column(
           children: [
-          Image.asset("../assets/images/logo1.png"),
+          Image.asset("assets/images/logo1.png"),
           CustomCircularProgressBar()
           ],
         )

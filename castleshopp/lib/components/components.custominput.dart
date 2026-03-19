@@ -4,7 +4,7 @@ class CustomInput extends StatelessWidget {
   final TextEditingController controller;
   final String label; 
   final String hint;
-  final bool? obscure;
+  final String? obscure;
   final Icon? icon;
   const CustomInput({super.key, required this.controller, required this.label, required this.hint, this.obscure,this.icon});
 
@@ -25,7 +25,7 @@ class CustomInput extends StatelessWidget {
         suffixIcon: icon,
         suffixIconColor: Colors.black
       ),
-      obscureText: obscure == true ? true : false
+      obscureText: obscure == "password" ? true : false
          ));
     
   }

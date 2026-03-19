@@ -3,8 +3,10 @@ import 'package:castleshopp/components/components.custominput.dart';
 import 'package:castleshopp/components/text/components.customtitle.dart';
 import 'package:castleshopp/components/text/components.description.dart';
 import 'package:castleshopp/components/text/components.link.dart';
-import 'package:castleshopp/data/data.api%5D.dart';
+import 'package:castleshopp/data/data.api.dart';
+import 'package:castleshopp/models/user.dart';
 import 'package:castleshopp/screens/auth/screens.register.dart';
+import 'package:castleshopp/screens/screens.home.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -22,20 +24,39 @@ class _LoginPageState extends State<LoginPage> {
 
   String endpoint = "$api/users";
 
-  Future<List<String>> fetchStringList() async {
+  String verify = "";
+
+  Future<List<User>> fetchStringList() async {
     final response = await http.get(Uri.parse(endpoint));
     if(response.statusCode == 200){
-      final List<dynamic> jsonList = json.decode(response.body);
-      List<String> stringList = jsonList.cast<String>();
-      return stringList;
+      final jsonList = json.decode(response.body);
+      List usersJson = jsonList['users'];
+      return usersJson.map((e)=> User.fromJson(e)).toList();
     }else {
       print("Fail to fetch data");
       return []; 
     }
   }
 
-  bool verify () {
-    for(itens in )
+  Future<void> verifyLogin(Future<List> DataList) async {
+    List<User> users = await fetchStringList();
+    final user = users.firstWhere(
+      (u) =>
+      u.email == username.text && 
+      u.password == password.text, 
+      orElse: ()=> User(id: -1, name: '', email: '', password: '')
+    );
+
+    if(user.id != -1){
+      setState(() {
+        print("Login Valido user ${user.id}");
+        Navigator.push(context,MaterialPageRoute(builder: (context)=> HomePage  ()));
+        verify = "";
+      });
+    }else {
+      verify = "Email ou Senha Incorreto";
+    }
+
   }
 
 
@@ -52,9 +73,9 @@ class _LoginPageState extends State<LoginPage> {
             top: 0,
             left: 0,
             right: 0,
-            height: MediaQuery.of(context).size.height * 0.60, 
+            height: MediaQuery.of(context).size.height * 0.40, 
             child: Image.asset(
-              "../assets/images/loginimage.png",
+              "assets/images/logo1.png",
               fit: BoxFit.cover,
             ),
           ),
@@ -87,8 +108,10 @@ class _LoginPageState extends State<LoginPage> {
                         LinkText(title: "Sign Up",page: RegisterPage(),),
                     ],),
                     CustomInput(controller: username , label: "username", hint: "Example Name",icon: Icon(Icons.person),),
-                    CustomInput(controller: password , label: "password", hint: "Example Password",obscure: true,icon: Icon(Icons.password)),
-                    AuthButton(title: "Login", auth: verify)
+                    CustomInput(controller: password , label: "password", hint: "Example Password",obscure: "password",icon: Icon(Icons.password)),
+                    AuthButton(title: "Login", auth: verifyLogin(fetchStringList())),
+                    Text(verify, style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)
+                    
                   ],
                 ),
              ),
@@ -98,3 +121,4 @@ class _LoginPageState extends State<LoginPage> {
       ));
   }
 }
+

@@ -1,4 +1,7 @@
 import 'package:castleshopp/screens/onboarding/screens.onboarding.dart';
+import 'package:castleshopp/screens/screens.home.dart';
+import 'package:castleshopp/screens/screens.settings.dart';
+import 'package:castleshopp/screens/screens.shopping.dart';
 import 'package:castleshopp/screens/screens.splash.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,14 +18,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      // debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: GoogleFonts.poppins.toString()
       ),
       initialRoute: '/splash',
       routes: {
         '/splash':(context)=> SplashScreen(),
-        '/onboarding': (context)=> OnBoarding1()
+        '/onboarding': (context)=> OnBoarding1(),
+        '/home': (context) => HomePage(),
+        '/settings': (context)=> SettingsPage(),
+        '/shopping': (context)=> ShoppingPage()
       },
       home:SplashScreen()
     );

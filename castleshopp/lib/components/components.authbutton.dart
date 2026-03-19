@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class AuthButton extends StatelessWidget {
   final String title;
-  final VoidCallback auth;
+  final Future<void> auth;
   const AuthButton({super.key,required this.title, required this.auth});
 
   @override
