@@ -1,4 +1,4 @@
-import 'package:castleshopp/screens/screens.home.dart';
+import 'package:castleshopp/screens/basescaffold/screens.home.dart';
 import 'package:flutter/material.dart';
 
 class AuthButton extends StatelessWidget {

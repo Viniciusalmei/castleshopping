@@ -1,7 +1,7 @@
 import 'package:castleshopp/screens/onboarding/screens.onboarding.dart';
-import 'package:castleshopp/screens/screens.home.dart';
-import 'package:castleshopp/screens/screens.settings.dart';
-import 'package:castleshopp/screens/screens.shopping.dart';
+import 'package:castleshopp/screens/basescaffold/screens.home.dart';
+import 'package:castleshopp/screens/basescaffold/screens.settings.dart';
+import 'package:castleshopp/screens/basescaffold/screens.shopping.dart';
 import 'package:castleshopp/screens/screens.splash.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         '/settings': (context)=> SettingsPage(),
         '/shopping': (context)=> ShoppingPage()
       },
-      home:SplashScreen()
+     
     );
   }
 }

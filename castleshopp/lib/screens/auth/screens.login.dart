@@ -6,7 +6,7 @@ import 'package:castleshopp/components/text/components.link.dart';
 import 'package:castleshopp/data/data.api.dart';
 import 'package:castleshopp/models/user.dart';
 import 'package:castleshopp/screens/auth/screens.register.dart';
-import 'package:castleshopp/screens/screens.home.dart';
+import 'package:castleshopp/screens/basescaffold/screens.home.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;

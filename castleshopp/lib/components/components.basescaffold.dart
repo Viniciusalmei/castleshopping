@@ -12,22 +12,24 @@ class BaseScaffold extends StatelessWidget {
       appBar: AppBar(
         
         automaticallyImplyLeading: false,
-        title: Row(
-          spacing: 100,
+        title: 
+        Padding(padding: 
+        EdgeInsetsGeometry.all(20),
+        child: Row(
+          spacing: MediaQuery.of(context).size.width * 0.6,
           children: [
-            // Padding(padding: EdgeInsetsGeometry.all(20),child:
-             Icon(Icons.person,),
-            // ),
-            
+             Icon(Icons.person,size: 30,color: Colors.white),
             Row(
               children: [
-                IconsPage(icon: Icon(Icons.settings), routepage: '/settings'),
-                IconsPage(icon: Icon(Icons.shopping_bag), routepage: '/shopping'),
-                IconsPage(icon: Icon(Icons.exit_to_app), routepage: '/splash'),
+                IconsPage(icon: Icon(Icons.settings,size: 30,color: Colors.white,), routepage: '/settings'),
+                IconsPage(icon: Icon(Icons.shopping_bag,size: 30,color: Colors.white), routepage: '/shopping'),
+                IconsPage(icon: Icon(Icons.exit_to_app,size: 30,color: Colors.white), routepage: '/splash'),
               ],
             ),
           ],
         ),  
+        ),
+        
         toolbarHeight: 120,
         backgroundColor: Color(0XFF17395e),
         // titleSpacing: 20,

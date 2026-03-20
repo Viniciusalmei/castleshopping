@@ -1,7 +1,7 @@
 import 'package:castleshopp/components/text/components.link.dart';
 import 'package:castleshopp/data/data.api.dart';
 import 'package:castleshopp/screens/auth/screens.login.dart';
-import 'package:castleshopp/screens/screens.home.dart';
+import 'package:castleshopp/screens/basescaffold/screens.home.dart';
 import 'package:flutter/material.dart';
 import 'package:castleshopp/components/components.custominput.dart';
 import 'package:castleshopp/components/components.authbutton.dart';

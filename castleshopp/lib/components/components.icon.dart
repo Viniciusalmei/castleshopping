@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class IconsPage extends StatelessWidget {
-  Icon icon; 
-  String routepage; 
+  final Icon icon; 
+  final String routepage; 
   
 
   IconsPage({super.key, required this.icon, required this.routepage});
@@ -11,7 +11,8 @@ class IconsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: icon,
-      onTap: () => Navigator.pushNamed(context, routepage),
+      onTap: ()async => 
+      await Navigator.pushNamed(context, routepage),
     );
   }
 }
